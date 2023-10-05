@@ -1,73 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+    /* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    background-color: #333;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .para{
-            font-size: 26px;
-
-        }
-        .main{
-            width: 60%;
-            height:500px;
-            color: red;
-            border: 2px solid black;
-            
-        }
-        .aaa{
-            width: 40%;
-            height:175px;
-            color: red;
-            border: 2px solid black;
-            margin-left: 30%;
-            margin-top: 5%;
-            border-bottom: none;
-        
-
-        }
-        .aaab{
-            width: 40%;
-            height:100px;
-            color: red;
-            border: 2px solid black;
-            margin-left: 30%;
-        
-        }
-        img{
-            width: 100%;
-            height:175px;
-        }
-        button{
-            width: 50%;
-            height:50px;
-            margin-left: 22%;
-            background-color: green;
-            margin-top: 5%;
-            border-radius: 3%;
-            
-        }
-        span {
-            color: white;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>My Tour Website</title>
 </head>
 <body>
-    <span class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vitae officia quisquam sapiente in ab magnam. Minima fuga sequi fugiat molestias perspiciatis totam incidunt eveniet, dolores ipsam, explicabo ut consequuntur.</span>
-    <div class="main">
-
-        <div class="aaa"> 
-            <img src="./me.JPG" alt="">
-        </div>
-
-        <div class="aaab">
-            <button><span>click me</span> </button> </div>
-        
-
-    </div>
-<h1>1st day 
-</h1>    
+    <header>
+        <h1>Welcome to My Tour Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our tour website! Explore the world with us.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are passionate about travel and want to share our experiences with you.</p>
+        </section>
+        <section id="destinations">
+            <h2>Destinations</h2>
+            <ul>
+                <li><a href="#paris">Paris</a></li>
+                <li><a href="#new-york">New York</a></li>
+                <li><a href="#tokyo">Tokyo</a></li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or want to book a tour, contact us at info@example.com.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Tour Website</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
